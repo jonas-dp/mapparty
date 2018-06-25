@@ -1,0 +1,619 @@
+{
+  "data": [
+    {
+      "agenda": [
+        {
+          "geodata": {
+            "coordinates": {
+              "lat": 50.942933,
+              "lng": 4.026938
+            },
+            "type": "Point"
+          },
+          "icon": "directions_bus",
+          "info": "Vertrek om 12h00 op het VTI",
+          "title": "Vertrek"
+        },
+        {
+          "additionalInfo": "Vluchtnummer SN 3181",
+          "geodata": {
+            "coordinates": [
+              {
+                "lat": 50.900999,
+                "lng": 4.485574
+              },
+              {
+                "lat": 41.799887,
+                "lng": 12.246238
+              }
+            ],
+            "type": "LineString"
+          },
+          "icon": "flight",
+          "info": "Vliegtijd: +- 2h05",
+          "title": "Vlucht Zaventem (BRU) naar Rome (FCO)"
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelcaliforniaroma.it/en' target='_blank'>Website</a>",
+          "geodata": {
+            "coordinates": {
+              "lat": 41.899196,
+              "lng": 12.499539
+            },
+            "type": "Point"
+          },
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Hotel California"
+        }
+      ],
+      "date": "2018-07-08"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "Culturele groepswandeling met nadruk op de aardekleuren",
+          "title": "Groepswandeling",
+          "geodata": {
+            "type": "Point",
+            "coordinates": {
+              "lat": 41.902147,
+              "lng": 12.497467
+            }
+          }
+        },
+        {
+          "icon": "directions_bike",
+          "info": "Gegidste fietstour door Rome",
+          "title": "Fietstocht",
+          "geodata": {
+            "type": "Point",
+            "coordinates": {
+              "lat": 41.905990,
+              "lng": 12.482775
+            }
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelcaliforniaroma.it/en' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Hotel California",
+          "geodata": {
+            "coordinates": {
+              "lat": 41.899196,
+              "lng": 12.499539
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-09"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "local_see",
+          "info": "Bezoek aan de Sint-Pietersbasiliek",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 41.902181,
+              "lng": 12.453926
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "music_note",
+          "info": "in Orvieto",
+          "title": "Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 42.718630,
+              "lng": 12.112754
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelorvieto.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Hotel Orvieto",
+          "geodata": {
+            "coordinates": {
+              "lat": 42.717680,
+              "lng": 12.142217
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-10"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "local_see",
+          "info": "Bezoek aan Orvieto met gids",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 42.718507,
+              "lng": 12.110745
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "directions_walk",
+          "info": "Bezoek aan Siena met gids",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.318809,
+              "lng": 11.330757
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "music_note",
+          "info": "in Siena",
+          "title": "Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.319041,
+              "lng": 11.330318
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.hotelalcide.com/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Alcide",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.472661,
+              "lng": 11.146482
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-11"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "Bezoek aan San Gimignano met gids",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.467632,
+              "lng": 11.043491
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.hotelalcide.com/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Alcide",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.472661,
+              "lng": 11.146482
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-12"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "Bezoek aan San Miniato",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.682964,
+              "lng": 10.855120
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelminervapalace.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Minerva Palace",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.883374,
+              "lng": 10.769485
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-13"
+    },
+    {
+      "agenda": [
+        {
+          "additionalInfo": "<a href='https://www.sopravista.com/en/festivals/meet-the-tradition-2018/' target='_blank'>Website Festival</a>",
+          "icon": "music_note",
+          "info": "Stoet & openingsceremonie van festival",
+          "title": "Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.880853,
+              "lng": 10.775525
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelminervapalace.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Minerva Palace",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.883374,
+              "lng": 10.769485
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-14"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "local_dining",
+          "info": "Typisch Italiaanse gerechten proeven",
+          "title": "Degustatie",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.885128,
+              "lng": 10.768519
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "place",
+          "info": "",
+          "title": "Workshop",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.885282,
+              "lng": 10.765387
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.sopravista.com/en/festivals/meet-the-tradition-2018/' target='_blank'>Website Festival</a>",
+          "icon": "music_note",
+          "info": "Slotceremonie van festival",
+          "title": "Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.880853,
+              "lng": 10.775525
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelminervapalace.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Minerva Palace",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.883374,
+              "lng": 10.769485
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-15"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "aan Firenze",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.769560,
+              "lng": 11.255814
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "local_bar",
+          "info": "",
+          "title": "Disco-avond",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.880853,
+              "lng": 10.775525
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelminervapalace.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Minerva Palace",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.883374,
+              "lng": 10.769485
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-16"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "aan Lucca",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.837621,
+              "lng": 10.495061
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "directions_walk",
+          "info": "aan Pisa",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.722839,
+              "lng": 10.401689
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='http://www.hotelminervapalace.it/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "4-sterren hotel",
+          "title": "Hotel Minerva Palace",
+          "geodata": {
+            "coordinates": {
+              "lat": 43.883374,
+              "lng": 10.769485
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-17"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "place",
+          "info": "",
+          "title": "Namiddag vrij",
+          "geodata": {
+            "coordinates": {
+              "lat": 44.801485,
+              "lng": 10.327904
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.ihg.com/holidayinnexpress/hotels/us/en/parma/pmfit/hoteldetail' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Holiday Inn Express",
+          "geodata": {
+            "coordinates": {
+              "lat": 44.818998,
+              "lng": 10.343048
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-18"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "aan Parma met gids",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 44.801485,
+              "lng": 10.327904
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "icon": "directions_walk",
+          "info": "aan Parmigiano Reggiano kaasfabriek",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 44.737282,
+              "lng": 10.225162
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.ihg.com/holidayinnexpress/hotels/us/en/parma/pmfit/hoteldetail' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Holiday Inn Express",
+          "geodata": {
+            "coordinates": {
+              "lat": 44.818998,
+              "lng": 10.343048
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-19"
+    },
+    {
+      "agenda": [
+        {
+          "additionalInfo": "<a href='https://www.centralhostelbg.com/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Central Hostel Bergamo",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.692353,
+              "lng": 9.669843
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-20"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "music_note",
+          "info": "in Bergamo",
+          "title": "Film &amp; Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.698264,
+              "lng": 9.677270
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.centralhostelbg.com/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Central Hostel Bergamo",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.692353,
+              "lng": 9.669843
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-21"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "music_note",
+          "info": "in Bergamo",
+          "title": "Film &amp; Optreden",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.698264,
+              "lng": 9.677270
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "<a href='https://www.centralhostelbg.com/en/' target='_blank'>Website</a>",
+          "icon": "hotel",
+          "info": "3-sterren hotel",
+          "title": "Central Hostel Bergamo",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.692353,
+              "lng": 9.669843
+            },
+            "type": "Point"
+          }
+        }
+      ],
+      "date": "2018-07-22"
+    },
+    {
+      "agenda": [
+        {
+          "icon": "directions_walk",
+          "info": "aan Milaan",
+          "title": "Bezoek",
+          "geodata": {
+            "coordinates": {
+              "lat": 45.464204,
+              "lng": 9.189982
+            },
+            "type": "Point"
+          }
+        },
+        {
+          "additionalInfo": "Vluchtnummer SN 3150Z",
+          "icon": "flight",
+          "info": "Vliegtijd: +- 1h30",
+          "title": "Vlucht Milaan (LIN) naar Zaventem (BRU)",
+          "geodata": {
+            "coordinates": [
+              {
+                "lat": 45.452176,
+                "lng": 9.276308
+              },
+              {
+                "lat": 50.900999,
+                "lng": 4.485574
+              }
+            ],
+            "type": "LineString"
+          }
+        },
+        {
+          "geodata": {
+            "coordinates": {
+              "lat": 50.942933,
+              "lng": 4.026938
+            },
+            "type": "Point"
+          },
+          "icon": "directions_bus",
+          "info": "Aankomst op het VTI",
+          "title": "Aankomst"
+        }
+      ],
+      "date": "2018-07-23"
+    }
+  ]
+}

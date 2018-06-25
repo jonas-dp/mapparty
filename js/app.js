@@ -1,0 +1,14 @@
+import * as DB from './modules/database/Database.js';
+import * as Shell from './modules/views/Shell.js';
+import * as Journey from './modules/models/Journey.js';
+
+Shell.setNavBarText("Even geduld...");
+
+DB.getData(function (data) {
+    Journey.setData(data.val().data);
+    Shell.init();
+}, function (error) {
+    console.log(error);
+    Shell.setNavBarText("Error");
+    alert("Kon gegevens niet ophalen. Probeer later opnieuw.");
+});
