@@ -5,7 +5,7 @@ export function setData(data){
 }
 
 export function findIndexByDate(date){
-    return journeyData.findIndex(day => day.date === date)
+    return journeyData.findIndex(day => day.date === date);
 }
 
 export function getDayAgenda(index){

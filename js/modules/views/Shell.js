@@ -8,7 +8,7 @@ const VIEW = {
     MAP: Symbol("MAP"),
     AGENDA: Symbol("AGENDA"),
     PHOTOS: Symbol("PHOTOS")
-}
+};
 
 export function init(){
     attachEventHandlers();
@@ -23,7 +23,7 @@ export function setNavBarText(string) {
 
 function setCurrentDayIndex(){
     let now = new Date();
-    let today = `${now.getFullYear()}-${("0" + (now.getMonth() + 1)).slice(-2)}-${('0' + now.getDate()).slice(-2)}`
+    let today = `${now.getFullYear()}-${("0" + (now.getMonth() + 1)).slice(-2)}-${('0' + now.getDate()).slice(-2)}`;
 
     let index = Journey.findIndexByDate(today);
     if (index < 0) {
