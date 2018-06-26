@@ -1,0 +1,30 @@
+{
+  "name": "mapparty",
+  "version": "0.0.1",
+  "description": "Fast and simple one-pager to visualize your next trip.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depken/mapparty.git"
+  },
+  "author": "Jonas De Pelsmaeker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/depken/mapparty/issues"
+  },
+  "homepage": "https://github.com/depken/mapparty#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^5.0.1",
+    "rollup": "^0.61.2",
+    "rollup-plugin-babel": "^3.0.5",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "uglify-js": "^3.4.2"
+  }
+}
