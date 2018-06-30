@@ -13,6 +13,7 @@ const VIEW = {
 export function init(){
 	attachEventHandlers();
 	setCurrentDayIndex();
+	displayNavBar();
 	Map.init();
 	displayDay();
 }
@@ -30,6 +31,10 @@ function setCurrentDayIndex(){
 		index = 0;
 	}
 	currentDayIndex = index;
+}
+
+function displayNavBar(){
+	document.getElementById("navbar").style.display = "block";
 }
 
 function displayDay(){
