@@ -17,11 +17,12 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
+  <meta name="theme-color" content="#009688"/>
   <title>Tournee Italië 2018</title>
 
   <style>
     #map {
-      height: calc(100% - 112px);
+      height: calc(100% - 110px);
     }
 
     html,
@@ -49,6 +50,15 @@
 
     a.text-red-4 {
       color: #a52714;
+    }
+
+    #busyIndicator{
+      position: absolute; 
+      top: 0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
     }
   </style>
 </head>
@@ -88,7 +98,7 @@
   </nav>
 
   <!-- loading circle -->
-  <div class="preloader-wrapper big active" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;">
+  <div id="busyIndicator" class="preloader-wrapper big active">
       <div class="spinner-layer spinner-red-only">
         <div class="circle-clipper left">
           <div class="circle"></div>

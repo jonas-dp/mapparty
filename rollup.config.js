@@ -6,7 +6,7 @@ export default {
     entry: 'js/app.js',
     dest: 'js/main.min.js',
     format: 'iife',
-    sourceMap: 'inline',
+    //sourceMap: 'inline',
     plugins: [
         eslint(),
         babel({
