@@ -22,7 +22,7 @@
 
   <style>
     #map {
-      height: calc(100% - 110px);
+      height: calc(100% - 112px);
     }
 
     html,
@@ -40,16 +40,8 @@
       font-size: 1em
     }
 
-    .tabs .indicator {
-      background-color: #a52714;
-    }
-
     i.icon-white {
       color: white;
-    }
-
-    a.text-red-4 {
-      color: #a52714;
     }
 
     #busyIndicator{
@@ -65,7 +57,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="nav-extended teal" style="display: none;" id="navbar">
+  <nav class="nav-extended blue darken-3" style="display: none;" id="navbar">
     <div class="nav-wrapper">
       <ul class="brand-logo center">
         <span id="day" class="white-text"></span>
@@ -88,10 +80,10 @@
     <div class="nav-content">
       <ul class="tabs tabs-fixed-width">
         <li class="tab" id="mapTab">
-          <a class="text-red-4">Kaart</a>
+          <a class="blue-text text-darken-3">Kaart</a>
         </li>
         <li class="tab" id="agendaTab">
-          <a class="text-red-4">Agenda</a>
+          <a class="blue-text text-darken-3">Agenda</a>
         </li>
       </ul>
     </div>
@@ -99,7 +91,7 @@
 
   <!-- loading circle -->
   <div id="busyIndicator" class="preloader-wrapper big active">
-      <div class="spinner-layer spinner-red-only">
+      <div class="spinner-layer spinner-blue-only">
         <div class="circle-clipper left">
           <div class="circle"></div>
         </div><div class="gap-patch">
@@ -114,7 +106,7 @@
   <div id="map"></div>
 
   <!-- Agenda -->
-  <ul class="collection" id="agenda">
+  <ul class="collection" id="agenda" style="display: none;">
   </ul>
 
   <!--scripts-->

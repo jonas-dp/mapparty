@@ -15,7 +15,7 @@ export function renderAgenda(journeyIndex){
 
 export function createAgendaItemHtml(agendaItem){
 	return `<li class="collection-item avatar">
-        <i class="material-icons circle red darken-4">${agendaItem.icon}</i>
+        <i class="material-icons circle blue darken-3">${agendaItem.icon}</i>
         <span class="title">${agendaItem.title}</span>
         <p>${agendaItem.info}<br/>${agendaItem.additionalInfo ? agendaItem.additionalInfo : ""}</p>
         </li>`;

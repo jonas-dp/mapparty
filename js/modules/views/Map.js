@@ -46,7 +46,7 @@ function createMapObject(agendaItem){
 function createMarker(agendaItem){
 	return L.marker(agendaItem.geodata.coordinates, {
 		icon: L.divIcon({
-			html: `<a class="btn-floating btn-small red darken-4"><i class="material-icons">${agendaItem.icon}</i></a>`,
+			html: `<a class="btn-floating btn-small blue darken-3"><i class="material-icons">${agendaItem.icon}</i></a>`,
 			className: "youHaveNoClass"
 		})
 	}).bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(agendaItem)}</ul>`);
