@@ -9,6 +9,11 @@ export const tab = document.getElementById("mapTab");
 export const element = document.getElementById("map");
 
 export function init() {
+	if(map){
+		//if map is already initialized, destroy it
+		map.off();
+		map.remove();
+	}
 	map = L.map("map").setView([0, 0], 2);
 
 	L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=" + mapboxToken, {
