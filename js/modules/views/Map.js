@@ -72,7 +72,7 @@ function createLayers(){
 		attribution: mapboxAttribution
 	});
 	let satteliteLayer = L.tileLayer(mapboxUrl, {
-		style: "mapbox/satellite-v9",
+		style: "mapbox/satellite-streets-v11",
 		attribution: mapboxAttribution
 	});
 
