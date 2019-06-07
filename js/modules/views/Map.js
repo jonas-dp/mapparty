@@ -4,6 +4,8 @@ import {mapboxToken} from "../Config.js";
 
 let map;
 let currentLayer;
+let mapboxUrl = `https://api.mapbox.com/styles/v1/{style}/tiles/256/{z}/{x}/{y}?access_token=${mapboxToken}`;
+let mapboxAttribution = "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>";
 
 export const tab = document.getElementById("mapTab");
 export const element = document.getElementById("map");
@@ -14,13 +16,14 @@ export function init() {
 		map.off();
 		map.remove();
 	}
-	map = L.map("map").setView([0, 0], 2);
 
-	L.tileLayer("https://api.mapbox.com/styles/v1/{style}/tiles/256/{z}/{x}/{y}?access_token={token}", {
-		token: mapboxToken,
-		style: "mapbox/outdoors-v11",
-		attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>"
-	}).addTo(map);
+	let layers = createLayers();
+
+	map = L.map("map", {
+		layers: [layers.Kaart, layers.Satteliet]
+	}).setView([0, 0], 2);
+
+	L.control.layers(layers).addTo(map);
 }
 
 export function placeObjects(journeyIndex){
@@ -61,4 +64,17 @@ function createMarker(agendaItem){
 function createLineString(agendaItem) {
 	return L.polyline(agendaItem.geodata.coordinates)
 		.bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(agendaItem)}</ul>`);
+}
+
+function createLayers(){
+	let outdoorLayer = L.tileLayer(mapboxUrl, {
+		style: "mapbox/outdoors-v11",
+		attribution: mapboxAttribution
+	});
+	let satteliteLayer = L.tileLayer(mapboxUrl, {
+		style: "mapbox/satellite-v9",
+		attribution: mapboxAttribution
+	});
+
+	return {"Satteliet": satteliteLayer, "Kaart": outdoorLayer};
 }
