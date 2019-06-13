@@ -9,7 +9,7 @@ export function findIndexByDate(date){
 }
 
 export function getDayAgenda(index){
-	return journeyData[index].agenda;
+	return journeyData[index].agenda.features;
 }
 
 export function getDayDate(index){

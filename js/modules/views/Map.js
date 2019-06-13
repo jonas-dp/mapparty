@@ -31,39 +31,35 @@ export function placeObjects(journeyIndex){
 		map.removeLayer(currentLayer);
 	}
 
-	currentLayer = new L.featureGroup();
-
-	Journey.getDayAgenda(journeyIndex).forEach(agendaItem => {
-		if(agendaItem.geodata){
-			currentLayer.addLayer(createMapObject(agendaItem));
-		}
+	currentLayer = new L.geoJSON(Journey.getDayAgenda(journeyIndex), {
+		pointToLayer: createMapObject
 	});
 
 	currentLayer.addTo(map);
 	map.fitBounds(currentLayer.getBounds().pad(0.1));
 }
 
-function createMapObject(agendaItem){
-	switch(agendaItem.geodata.type){
+function createMapObject(feature, coordinates){
+	switch(feature.geometry.type){
 	case "Point":
-		return createMarker(agendaItem);
+		return createMarker(feature, coordinates);
 	case "LineString":
-		return createLineString(agendaItem);
+		return createLineString(feature, coordinates);
 	}
 }
 
-function createMarker(agendaItem){
-	return L.marker(agendaItem.geodata.coordinates, {
+function createMarker(feature, coordinates){
+	return L.marker(coordinates, {
 		icon: L.divIcon({
-			html: `<a class="btn-floating btn-small blue darken-3"><i class="material-icons">${agendaItem.icon}</i></a>`,
+			html: `<a class="btn-floating btn-small blue darken-3"><i class="material-icons">${feature.properties.icon}</i></a>`,
 			className: "youHaveNoClass"
 		})
-	}).bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(agendaItem)}</ul>`);
+	}).bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(feature.properties)}</ul>`);
 }
 
-function createLineString(agendaItem) {
-	return L.polyline(agendaItem.geodata.coordinates)
-		.bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(agendaItem)}</ul>`);
+function createLineString(feature, coordinates) {
+	return L.polyline(coordinates)
+		.bindPopup(`<ul class="collection with-header">${Agenda.createAgendaItemHtml(feature.properties)}</ul>`);
 }
 
 function createLayers(){
