@@ -48,6 +48,20 @@ function displayDay(){
 	setNavBarText(Journey.getDayDate(currentDayIndex).toLocaleDateString("nl-BE", { day: "numeric", month: "long" }));
 }
 
+function displayPreviousDay(){
+	if (--currentDayIndex < 0) {
+		currentDayIndex = Journey.getNumberOfDays() - 1;
+	}
+	displayDay();
+}
+
+function displayNextDay(){
+	if (++currentDayIndex > Journey.getNumberOfDays() - 1) {
+		currentDayIndex = 0;
+	}
+	displayDay();
+}
+
 function switchViewTo(view){
 	switch (view) {
 	case VIEW.MAP:
@@ -70,17 +84,18 @@ function attachEventHandlers(){
 		switchViewTo(VIEW.AGENDA);
 	};
 
-	document.getElementById("prev").onclick = function(){
-		if (--currentDayIndex < 0) {
-			currentDayIndex = Journey.getNumberOfDays() - 1;
-		}
-		displayDay();
-	};
+	document.getElementById("prev").onclick = displayPreviousDay;
 
-	document.getElementById("next").onclick = function(){
-		if (++currentDayIndex > Journey.getNumberOfDays() - 1) {
-			currentDayIndex = 0;
+	document.getElementById("next").onclick = displayNextDay;
+
+	document.onkeydown = function(event){
+		switch(event.keyCode){
+		case 37: //left arrow key
+			displayPreviousDay();
+			break;
+		case 39: //right arrow key
+			displayNextDay();
+			break;
 		}
-		displayDay();
 	};
 }
